@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XNz-bv-twY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -208,15 +208,148 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="76"/>
+            <point key="canvasLocation" x="-355" y="65"/>
+        </scene>
+        <!--Select Language Screen-->
+        <scene sceneID="S5d-Zq-Gmz">
+            <objects>
+                <viewController id="XNz-bv-twY" customClass="SelectLanguageScreen" customModule="SSIDApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AeC-1o-Q2l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub4-n6-DGP">
+                                <rect key="frame" x="16" y="60" width="382" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZB-vl-xCa">
+                                <rect key="frame" x="0.0" y="101.5" width="414" height="760.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Xgg-I2-TbZ">
+                                        <rect key="frame" x="24" y="256.5" width="366" height="248"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVM-5E-jIz" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Vu6-gg-ug5"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="English">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBGColor">
+                                                        <color key="value" red="0.96078431372549022" green="0.84705882352941175" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedBGColor">
+                                                        <color key="value" red="0.94117647058823528" green="0.95686274509803915" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-Sf-aUh" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="66" width="366" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="p8R-h0-heS"/>
+                                                </constraints>
+                                                <state key="normal" title="한국어"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBGColor">
+                                                        <color key="value" red="0.96078431369999995" green="0.84705882349999995" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedBGColor">
+                                                        <color key="value" red="0.94117647059999998" green="0.95686274510000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBv-Iz-acz" userLabel="BtnJapanese" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="132" width="366" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="rdY-un-Ij7"/>
+                                                </constraints>
+                                                <state key="normal" title="日本語"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBGColor">
+                                                        <color key="value" red="0.96078431369999995" green="0.84705882349999995" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedBGColor">
+                                                        <color key="value" red="0.94117647059999998" green="0.95686274510000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-Ae-aa7" userLabel="BtnRussian" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="198" width="366" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="0TD-3d-Y8P"/>
+                                                </constraints>
+                                                <state key="normal" title="Pусский"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBGColor">
+                                                        <color key="value" red="0.96078431369999995" green="0.84705882349999995" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedBGColor">
+                                                        <color key="value" red="0.94117647059999998" green="0.95686274510000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Few-hB-Xpt">
+                                        <rect key="frame" x="157" y="536.5" width="100" height="50"/>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1Dt-0T-4cP"/>
+                                            <constraint firstAttribute="width" constant="100" id="EL0-SD-hgD"/>
+                                        </constraints>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xgg-I2-TbZ" firstAttribute="centerY" secondItem="YZB-vl-xCa" secondAttribute="centerY" id="8G7-hm-jX5"/>
+                                    <constraint firstItem="Xgg-I2-TbZ" firstAttribute="leading" secondItem="YZB-vl-xCa" secondAttribute="leading" constant="24" id="9mz-dO-kEw"/>
+                                    <constraint firstItem="Few-hB-Xpt" firstAttribute="centerX" secondItem="Xgg-I2-TbZ" secondAttribute="centerX" id="M50-OX-qeu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xgg-I2-TbZ" secondAttribute="trailing" constant="24" id="cPn-Jh-EKq"/>
+                                    <constraint firstItem="Few-hB-Xpt" firstAttribute="top" secondItem="Xgg-I2-TbZ" secondAttribute="bottom" constant="32" id="vT1-Dr-Aie"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ul8-JH-wDN"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.95749491450000002" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Ub4-n6-DGP" firstAttribute="centerX" secondItem="YZB-vl-xCa" secondAttribute="centerX" id="3PO-pp-mDK"/>
+                            <constraint firstItem="ul8-JH-wDN" firstAttribute="trailing" secondItem="YZB-vl-xCa" secondAttribute="trailing" id="9Ur-tm-MEI"/>
+                            <constraint firstItem="YZB-vl-xCa" firstAttribute="leading" secondItem="ul8-JH-wDN" secondAttribute="leading" id="NjM-yz-xaP"/>
+                            <constraint firstItem="Ub4-n6-DGP" firstAttribute="leading" secondItem="ul8-JH-wDN" secondAttribute="leading" constant="16" id="Oas-A3-4Mo"/>
+                            <constraint firstItem="ul8-JH-wDN" firstAttribute="bottom" secondItem="YZB-vl-xCa" secondAttribute="bottom" id="VmK-67-n51"/>
+                            <constraint firstItem="YZB-vl-xCa" firstAttribute="top" secondItem="Ub4-n6-DGP" secondAttribute="bottom" constant="12" id="YUq-lb-8Jr"/>
+                            <constraint firstItem="Ub4-n6-DGP" firstAttribute="top" secondItem="ul8-JH-wDN" secondAttribute="top" constant="16" id="gbl-2N-HXI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnEnglish" destination="BVM-5E-jIz" id="onQ-0O-JlJ"/>
+                        <outlet property="btnJapanese" destination="yBv-Iz-acz" id="ahr-N8-9a9"/>
+                        <outlet property="btnKorean" destination="Zcl-Sf-aUh" id="f68-wf-bJ1"/>
+                        <outlet property="btnRussian" destination="BGc-Ae-aa7" id="WhD-gV-aO5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eoq-Mc-6iR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="64"/>
         </scene>
     </scenes>
     <designables>
         <designable name="Fig-yh-5lq">
-            <size key="intrinsicContentSize" width="284.5" height="41.153671875000001"/>
+            <size key="intrinsicContentSize" width="39.5" height="20.5"/>
         </designable>
         <designable name="UVJ-Zk-DAw">
-            <size key="intrinsicContentSize" width="287.5" height="41.153671875000001"/>
+            <size key="intrinsicContentSize" width="71" height="19"/>
         </designable>
     </designables>
     <resources>
