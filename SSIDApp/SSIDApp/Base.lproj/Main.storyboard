@@ -228,12 +228,12 @@
                                 <rect key="frame" x="0.0" y="101.5" width="414" height="760.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Xgg-I2-TbZ">
-                                        <rect key="frame" x="24" y="256.5" width="366" height="248"/>
+                                        <rect key="frame" x="24" y="187" width="366" height="272"/>
                                         <subviews>
-                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVM-5E-jIz" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVM-5E-jIz" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="56"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Vu6-gg-ug5"/>
+                                                    <constraint firstAttribute="height" constant="56" id="Vu6-gg-ug5"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="English">
@@ -249,14 +249,26 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="unselectedBGColor">
                                                         <color key="value" red="0.94117647058823528" green="0.95686274509803915" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="actionChangeLanguage:" destination="XNz-bv-twY" eventType="touchUpInside" id="IOV-Tt-zsg"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-Sf-aUh" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="66" width="366" height="50"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-Sf-aUh" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="72" width="366" height="56"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="p8R-h0-heS"/>
+                                                    <constraint firstAttribute="height" constant="56" id="p8R-h0-heS"/>
                                                 </constraints>
-                                                <state key="normal" title="한국어"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="한국어">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedBGColor">
                                                         <color key="value" red="0.96078431369999995" green="0.84705882349999995" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -264,14 +276,26 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="unselectedBGColor">
                                                         <color key="value" red="0.94117647059999998" green="0.95686274510000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="actionChangeLanguage:" destination="XNz-bv-twY" eventType="touchUpInside" id="czz-sG-fp0"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBv-Iz-acz" userLabel="BtnJapanese" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="132" width="366" height="50"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBv-Iz-acz" userLabel="BtnJapanese" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="144" width="366" height="56"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="rdY-un-Ij7"/>
+                                                    <constraint firstAttribute="height" constant="56" id="rdY-un-Ij7"/>
                                                 </constraints>
-                                                <state key="normal" title="日本語"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="日本語">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedBGColor">
                                                         <color key="value" red="0.96078431369999995" green="0.84705882349999995" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -279,14 +303,26 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="unselectedBGColor">
                                                         <color key="value" red="0.94117647059999998" green="0.95686274510000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="actionChangeLanguage:" destination="XNz-bv-twY" eventType="touchUpInside" id="hCj-Fc-lNi"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-Ae-aa7" userLabel="BtnRussian" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="198" width="366" height="50"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-Ae-aa7" userLabel="BtnRussian" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="216" width="366" height="56"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="0TD-3d-Y8P"/>
+                                                    <constraint firstAttribute="height" constant="56" id="0TD-3d-Y8P"/>
                                                 </constraints>
-                                                <state key="normal" title="Pусский"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Pусский">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedBGColor">
                                                         <color key="value" red="0.96078431369999995" green="0.84705882349999995" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -294,12 +330,21 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="unselectedBGColor">
                                                         <color key="value" red="0.94117647059999998" green="0.95686274510000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="actionChangeLanguage:" destination="XNz-bv-twY" eventType="touchUpInside" id="Hrf-Gy-ec7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Few-hB-Xpt">
-                                        <rect key="frame" x="157" y="536.5" width="100" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Few-hB-Xpt" customClass="CustomButton" customModule="SSIDApp" customModuleProvider="target">
+                                        <rect key="frame" x="157" y="491" width="100" height="50"/>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1Dt-0T-4cP"/>
@@ -308,11 +353,19 @@
                                         <state key="normal" title="Next">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionNext:" destination="XNz-bv-twY" eventType="touchUpInside" id="177-9p-wUr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Xgg-I2-TbZ" firstAttribute="centerY" secondItem="YZB-vl-xCa" secondAttribute="centerY" id="8G7-hm-jX5"/>
+                                    <constraint firstItem="Xgg-I2-TbZ" firstAttribute="centerY" secondItem="YZB-vl-xCa" secondAttribute="centerY" multiplier="0.85" id="8G7-hm-jX5"/>
                                     <constraint firstItem="Xgg-I2-TbZ" firstAttribute="leading" secondItem="YZB-vl-xCa" secondAttribute="leading" constant="24" id="9mz-dO-kEw"/>
                                     <constraint firstItem="Few-hB-Xpt" firstAttribute="centerX" secondItem="Xgg-I2-TbZ" secondAttribute="centerX" id="M50-OX-qeu"/>
                                     <constraint firstAttribute="trailing" secondItem="Xgg-I2-TbZ" secondAttribute="trailing" constant="24" id="cPn-Jh-EKq"/>
@@ -346,10 +399,10 @@
     </scenes>
     <designables>
         <designable name="Fig-yh-5lq">
-            <size key="intrinsicContentSize" width="39.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="284.5" height="41.153671875000001"/>
         </designable>
         <designable name="UVJ-Zk-DAw">
-            <size key="intrinsicContentSize" width="71" height="19"/>
+            <size key="intrinsicContentSize" width="287.5" height="41.153671875000001"/>
         </designable>
     </designables>
     <resources>

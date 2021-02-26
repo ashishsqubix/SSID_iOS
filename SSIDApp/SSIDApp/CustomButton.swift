@@ -17,4 +17,17 @@ class CustomButton: UIButton {
             self.backgroundColor = isSelected ? selectedBGColor : unselectedBGColor
         }
     }
+    
+    @IBInspectable var cornerRadius:CGFloat = 0.0 {
+        didSet {
+            self.layer.cornerRadius = cornerRadius
+            self.clipsToBounds = true
+        }
+    }
+    
+    @IBInspectable var borderColor:UIColor = .black{
+        didSet {
+            self.layer.borderColor = borderColor.cgColor
+        }
+    }
 }

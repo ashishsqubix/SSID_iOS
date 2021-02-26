@@ -24,7 +24,22 @@ class SelectLanguageScreen: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func selectLanguage(sender:CustomButton){
+        btnEnglish.isSelected = false
+        btnRussian.isSelected = false
+        btnJapanese.isSelected = false
+        btnKorean.isSelected = false
+        sender.isSelected = true
+    }
+    
+    @IBAction func actionChangeLanguage(_ sender: CustomButton) {
+        selectLanguage(sender:sender)
+    }
+    
 
-   
+    @IBAction func actionNext(_ sender: CustomButton) {
+        
+    }
+    
 
 }
